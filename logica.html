@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>BIBLIOTECA CESDE</h1>
+        </div>
+        <img src="images/logo-Cesde-2023.webp" alt="">
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="operaciones.html">Operaciones</a>
+        <a href="#">Modelo entidad relación</a>
+        <a href="#">Lógica</a>
+        <a href="#">Contactos</a>
+    </nav>
+    <h1>Logica de programación</h1>
+    <p>Este es un ejemplo de un ejercicio en java donde el usuario ingresa una contraseña con su documento,
+        si el usuario ingresa corectamente su contraseña podra entrar al menú,
+        en caso de no ser asi, simplemente se le negara el acceso
+    </p>
+    <div class="logica">
+
+        <div class="operacion">
+            <p>
+                package com.mycompany.practica;
+                <br>
+
+import java.util.Scanner;
+<br>
+
+<span id="gris">/**</span>
+<br>
+<span id="gris">*</span> <br>
+ <span id="gris">* @author Santiago Roman</span>
+ <br>
+ <span id="gris">*/</span> <br>
+ <br>
+ public class practica {
+    <br>
+
+    public static void main(String[] args) {
+        <br>
+      //Definición de variables
+      <br>
+      int cedula;
+      <br>
+      String password;
+      <br>
+      String passwordDig;
+      <br>
+      <br>
+      Scanner password1 = new Scanner(System.in);
+      <br>
+        System.out.println("Cree una contraseña");
+        <br>
+        password = password1.nextLine();
+        <br>
+        <br>
+        Scanner cedula1 = new Scanner(System.in);
+        <br>
+        System.out.println("Ingrese la cedula");
+        <br>
+        cedula = cedula1.nextInt();
+        <br>
+        <br>
+        Scanner passwordDig1 = new Scanner(System.in);
+        <br>
+        System.out.println("Ingrese la contraseña");
+        <br>
+        passwordDig = passwordDig1.nextLine();
+        <br>
+        <br>
+        if(password.equals(passwordDig)){
+            <br>
+            System.out.println("Tienes la opción de ver el siguiente menú");
+            <br>
+            System.out.println("-Actualizar datos-");
+            <br>
+            System.out.println("-Ingresar datos-");
+            <br>
+            System.out.println("-Solicitar cita-");
+            <br>
+        }else {
+            <br>
+            System.out.println("Usted no tiene acceso al menú");
+            <br>
+        }
+        <br>
+    }
+    <br>
+}
+            </p>
+        </div>
+    </div>
+
+        <div class="cuadro">
+            LA LECTURA ABRE LA PUERTAS DEL CONOCIMIENTO Y LA IMAGINACIÓN
+        </div>
+    </main>
+
+    <footer>
+        <p>Santiago román</p>
+        <p>David Penagos Mejia</p>
+    </footer>
+</body>
+
+</html>

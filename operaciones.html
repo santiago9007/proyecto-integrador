@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>BIBLIOTECA CESDE</h1>
+        </div>
+        <img src="images/logo-Cesde-2023.webp" alt="">
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="operaciones.html">Operaciones</a>
+        <a href="#">Modelo entidad relación</a>
+        <a href="logica.html">Lógica</a>
+        <a href="#">Contactos</a>
+    </nav>
+    <h1>Operaciones en sql server</h1>
+    <div class="create">
+        <h2>Create</h2>
+        <p><span id="azul">create database</span> cesdeLibrary;
+            <br>
+            <span id="azul">use</span> cesdeLibrary;
+            <br>
+            <span id="azul">create table</span> users<span id="gris">(</span>
+            id_users <span id="azul">int primary key</span> <span id="gris">not null</span>, 
+            name <span id="azul">varchar</span><span id="gris">(</span>30<span id="gris">)</span>,
+             name2 <span id="azul">varchar</span><span id="gris">(</span>30<span id="gris">)</span>,
+              lastName <span id="azul">varchar</span><span id="gris">(</span>30<span id="gris">)</span>,
+               lastName2 <span id="azul">varchar</span><span id="gris">(</span>30<span id="gris">)</span>,
+                movil <span id="azul">varchar</span><span id="gris">(</span>15<span id="gris">)</span>,
+                 email <span id="azul">varchar</span><span id="gris">(</span>50<span id="gris">)</span>
+                 <span id="gris">);</span></p>
+    </div>
+
+    <div class="read">
+        <h2>Read</h2>
+        <p><span id="azul">select</span> borrow.id_borrow, typeUser.name, users.name, users.name2, users.lastName, users.lastName2, books.title
+            from borrow
+            <br>
+            <span id="gris">inner join</span> typeUser <span id="azul">on</span> borrow.id_typeUser = typeUser.id_typeUser
+            <br>
+            <span id="gris">inner join</span> users <span id="azul">on</span> borrow.id_users = users.id_users
+            <br>
+            <span id="gris">inner join</span> books <span id="azul">on</span> borrow.id_books = books.id_books;</p>
+    </div>
+
+    <div class="update">
+        <h2>Update</h2>
+        <p>
+            <span id="rosa">update</span> user_cesde set last_name = 'diaz', phone_movil = '3216456789' 
+            <span id="azul">where</span> id_user = 25852366;
+        </p>
+    </div>
+
+    <div class="delete">
+        <h2>Delete</h2>
+        <p>
+            <span id="azul">delete from</span> student <span id="azul">where</span> id_student = 36558945;
+        </p>
+    </div>
+
+    <div class="cuadro">
+        LA LECTURA ABRE LA PUERTAS DEL CONOCIMIENTO Y LA IMAGINACIÓN
+    </div>
+
+    <footer>
+        <p>Santiago román</p>
+        <p>David Penagos Mejia</p>
+    </footer>
+</body>
+
+</html>
