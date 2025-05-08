@@ -206,6 +206,11 @@ input {
     align-items: center;
 }
 
+.modelo {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     display: flex;
     padding: 20px;
@@ -214,6 +219,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+footer img {
+    width: 25px;
+    margin: 5px;
 }
 
 
