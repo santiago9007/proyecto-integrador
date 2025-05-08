@@ -37,18 +37,6 @@ p {
     color: fuchsia;
 }
 
-#verde {
-    color: green;
-}
-
-#morado {
-    color: purple;
-}
-
-#naranja {
-    color: orange;
-}
-
 .create {
     display: flex;
     flex-direction: column;
@@ -66,7 +54,7 @@ p {
 
 .create p {
     justify-content: center;
-    margin: auto;
+    margin: 5px;
 }
 
 .create:hover {
@@ -193,6 +181,19 @@ main .text {
 
 .clear {
     clear: both;
+}
+
+.label {
+    display: flex;
+    margin: 25px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+input {
+    margin: 5px;
 }
 
 .cuadro {
