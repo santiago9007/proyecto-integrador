@@ -177,6 +177,7 @@ main .text {
     float: right;
     width: 300px;
     padding: 0 30px;
+    height: 180px;
 }
 
 .clear {
