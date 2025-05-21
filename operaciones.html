@@ -17,56 +17,73 @@
     </header>
 
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="operaciones.html">Operaciones</a>
-        <a href="modelo.html">Modelo entidad relación</a>
-        <a href="logica.html">Lógica</a>
-        <a href="contactos.html">Contactos</a>
+        <ul>
+            <li><a href="index.html">📘Inicio</a></li>
+            <li><a href="operaciones.html">📘Operaciones</a></li>
+            <li><a href="modelo.html">📘Modelo entidad relación</a></li>
+            <li><a href="logica.html">📘Lógica</a></li>
+            <li><a href="contactos.html">📘Contactos</a></li>
+        </ul>
     </nav>
-    <h1>Operaciones en sql server</h1>
-    <div class="create">
-        <h2>Create</h2>
-        <p><span id="azul">create database</span> cesdeLibrary;
-            <br>
-            <span id="azul">use</span> cesdeLibrary;
-            <br>
-            <span id="azul">create table</span> users<span id="gris">(</span>
-            id_users <span id="azul">int primary key</span> <span id="gris">not null</span>, 
-            name <span id="azul">varchar</span><span id="gris">(</span>30<span id="gris">)</span>,
-             name2 <span id="azul">varchar</span><span id="gris">(</span>30<span id="gris">)</span>,
-              lastName <span id="azul">varchar</span><span id="gris">(</span>30<span id="gris">)</span>,
-               lastName2 <span id="azul">varchar</span><span id="gris">(</span>30<span id="gris">)</span>,
-                movil <span id="azul">varchar</span><span id="gris">(</span>15<span id="gris">)</span>,
-                 email <span id="azul">varchar</span><span id="gris">(</span>50<span id="gris">)</span>
-                 <span id="gris">);</span></p>
-    </div>
+   <section class="crud">
+    <h2>CRUD de Usuarios (Visual)</h2>
 
-    <div class="read">
-        <h2>Read</h2>
-        <p><span id="azul">select</span> borrow.id_borrow, typeUser.name, users.name, users.name2, users.lastName, users.lastName2, books.title
-            from borrow
-            <br>
-            <span id="gris">inner join</span> typeUser <span id="azul">on</span> borrow.id_typeUser = typeUser.id_typeUser
-            <br>
-            <span id="gris">inner join</span> users <span id="azul">on</span> borrow.id_users = users.id_users
-            <br>
-            <span id="gris">inner join</span> books <span id="azul">on</span> borrow.id_books = books.id_books;</p>
-    </div>
+    <!-- CREATE (Formulario) -->
+    <form class="crud-form">
+        <input type="number" placeholder="ID" required>
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Segundo Nombre">
+        <input type="text" placeholder="Apellido" required>
+        <input type="text" placeholder="Segundo Apellido">
+        <input type="text" placeholder="Celular" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <button type="submit">Agregar</button>
+    </form>
 
-    <div class="update">
-        <h2>Update</h2>
-        <p>
-            <span id="rosa">update</span> user_cesde set last_name = 'diaz', phone_movil = '3216456789' 
-            <span id="azul">where</span> id_user = 25852366;
-        </p>
-    </div>
-
-    <div class="delete">
-        <h2>Delete</h2>
-        <p>
-            <span id="azul">delete from</span> student <span id="azul">where</span> id_student = 36558945;
-        </p>
-    </div>
+    <!-- READ / UPDATE / DELETE (Tabla) -->
+    <table class="crud-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Nombre 2</th>
+                <th>Apellido</th>
+                <th>Apellido 2</th>
+                <th>Celular</th>
+                <th>Correo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1001</td>
+                <td>Ana</td>
+                <td>Lucía</td>
+                <td>García</td>
+                <td>López</td>
+                <td>3001234567</td>
+                <td>ana@example.com</td>
+                <td>
+                    <button disabled>Editar</button>
+                    <button disabled>Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>Juan</td>
+                <td>Manuel</td>
+                <td>Pérez</td>
+                <td>Díaz</td>
+                <td>3109876543</td>
+                <td>juan@example.com</td>
+                <td>
+                    <button disabled>Editar</button>
+                    <button disabled>Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
     <div class="cuadro">
         LA LECTURA ABRE LA PUERTAS DEL CONOCIMIENTO Y LA IMAGINACIÓN
