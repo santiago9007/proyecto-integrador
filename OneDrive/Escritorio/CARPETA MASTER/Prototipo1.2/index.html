@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
+    <title>Bibliteca Cesde</title>
+    <!--Favicon-->
+    <link rel="icon" href="images/gem.svg">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Goolge Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#"><img class="logo-img" src="images/logo-Cesde-2023.webp" alt="Logo"
+                        width="200"></a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="operaciones.html">Operaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="modelo.html" aria-disabled="true">Modelo ER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html" aria-disabled="true">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Sección Hero -->
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-imagen-desarrollador " src="images/libros.jpeg" alt="foto">
+            <h1>Bienvenidos a la biblioteca</h1>
+            
+        </div>
+        <div class="hero-inferior">
+            <img class="hero-inferior-imagen img-fluid" src="images/Biblioteca_viajera.webp" alt="monitor" width="500">
+        </div>
+    </section>
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Conoce más</h2>
+            <p class="seccion-texto">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, dolorum architecto possimus ipsum sint
+                ducimus excepturi voluptatem assumenda eius reiciendis nobis odio quam quisquam unde suscipit! Similique
+                consequatur iure doloremque eos blanditiis nam ratione veritatis saepe necessitatibus quisquam voluptas
+                quo, distinctio natus numquam laborum itaque optio fuga. Eum, eveniet asperiores.
+            </p>
+        </div>
+
+    </section>
+    <!-- Sección de experiencia -->
+    <section class="experiencia seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!--Desarrollo web-->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-person"></i>
+                    <p class="experiencia-titulo">Registrate</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dolore minus ea
+                        provident officiis temporibus quos fugiat quae vero corporis! Error dolores ullam cumque
+                        similique pariatur itaque ex iste?</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">
+                            <a href="vista2.html" class="badge text-bg-primary">Registrate aqui</a>
+                        </span>
+                    </div>
+                </div>
+                <!--Articulos-->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-search"></i>
+                    <p class="experiencia-titulo">Consultas</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dolore minus ea
+                        provident officiis temporibus quos fugiat quae vero corporis! Error dolores ullam cumque
+                        similique pariatur itaque ex iste?</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Prestamos</span>
+                        <span class="badge text-bg-primary">Multas</span>
+                        <span class="badge text-bg-primary">Blogs</span>
+                    </div>
+                </div>
+                <!--Estudiante-->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-book"></i>
+                    <p class="experiencia-titulo">Servicios</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dolore minus ea
+                        provident officiis temporibus quos fugiat quae vero corporis! Error dolores ullam cumque
+                        similique pariatur itaque ex iste?</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Reservas</span>
+                        <span class="badge text-bg-primary">Libros</span>
+                        <span class="badge text-bg-primary">Donaciones</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo texto-negro">Libros agregados recientemente</h2>
+        <h3 class="seccion-descripcion">Estos son los nuevos libros que hemos recibido por donaciones...</h3>
+        <!-- Galeria -->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="images/arte_guerra.jpg" alt="proyecto 1" width="50">
+                        <div class="overlay">
+                            <p>"El arte de la guerra" es un antiguo tratado militar escrito por Sun Tzu, un general y
+                                estratega chino, alrededor del siglo V a.C.</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-book"></i></a>
+                                <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                    rel="noopener noreferrer"><i class="bi bi-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="images/temor.jpg" alt="proyecto 1">
+                        <div class="overlay">
+                            <p>Una novela de fantasía épica de Patrick Rothfuss, donde
+                                Kvothe continúa su viaje lleno de magia, amor y conocimiento.</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-book"></i></a>
+                                <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                    rel="noopener noreferrer"><i class="bi bi-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="col12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="images/tormenta.jpg" alt="proyecto 1">
+                        <div class="overlay">
+                            <p>Es la tercera novela de Canción de hielo y fuego, repleta de traiciones, batallas y giros
+                                impactantes que cambian todo.</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-book"></i></a>
+                                <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                    rel="noopener noreferrer"><i class="bi bi-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 4 -->
+                <div class="col12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="images/libro_negro.jpg" alt="proyecto 1">
+                        <div class="overlay">
+                            <p>Es un thriller literario donde el inspector Kraken enfrenta secretos del pasado ligados a
+                                libros raros y crímenes.</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-book"></i></a>
+                                <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                    rel="noopener noreferrer"><i class="bi bi-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 5 -->
+                <div class="col12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="images/anillos.jpg" alt="proyecto 1">
+                        <div class="overlay">
+                            <p>Es una épica fantasía sobre la lucha entre el bien y el mal, centrada en destruir un
+                                anillo poderoso.</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-book"></i></a>
+                                <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                    rel="noopener noreferrer"><i class="bi bi-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 6 -->
+                <div class="col12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="images/mistborn.jpg" alt="proyecto 1">
+                        <div class="overlay">
+                            <p>Fantasía donde una joven descubre sus poderes mágicos y se une a
+                                una rebelión para derrocar a un imperio tiránico.</p>
+                            <div class="iconos-contenedor">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i
+                                        class="bi bi-book"></i></a>
+                                <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                    rel="noopener noreferrer"><i class="bi bi-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">Ver más agregados
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+        </a>
+    </section>
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+        <h2 class="seccion-titulo texto-negro">Articulos</h2>
+        <div class="card">
+            <div class="card-header">
+                Mas recientes
+            </div>
+            <ul class="list-group list-group-flush">
+                <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        El decorador @property en phyton - como usarlo, ventajas y sintaxis
+                    </li>
+                </a>
+                <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        Phyton tutorial ciclos while - while true ejemplos de sintaxis y ciclos infinitos
+                    </li>
+                </a>
+                <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        Phyton leer archivo JSON - cómo cargar JSON desde un archivo y procesar dumps
+                    </li>
+                </a>
+                <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        Phyton cómo escribir en un archivo - abrir, leer, escribir y otras funciones de archivos
+                        explicadas
+                    </li>
+                </a>
+                <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">
+                        ¿Para que se usa phyton? 10+ usos del lenguajes de programación
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">Ver más artículos
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+        </a>
+    </section>
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+        <h2 class="seccion-titulo">Testimonios</h2>
+        <h3 class="seccion-descripcion">Estos son algunos testimonios de nuestros usuarios...</h3>
+        <!-- Carrusel -->
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img class="testimonio-imagen rounded-circle" src="images/cliente1.svg" alt="cliente 1">
+                        <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+                            iste quo, quidem laborum tempore ullam praesentium nemo perferendis rem consectetur
+                            temporibus reprehenderit.</p>
+                        <div class="testimonio-info">
+                            <p class="cliente">Leonardo</p>
+                            <p class="cargo">Estudiante de desarrollo de software</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="testimonio-imagen rounded-circle" src="images/cliente2.svg" alt="cliente 1">
+                        <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+                            iste quo, quidem laborum tempore ullam praesentium nemo perferendis rem consectetur
+                            temporibus reprehenderit.</p>
+                        <div class="testimonio-info">
+                            <p class="cliente">Nora</p>
+                            <p class="cargo">Estudiante de Diseño</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="testimonio-imagen rounded-circle" src="images/cliente3.svg" alt="cliente 1">
+                        <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+                            iste quo, quidem laborum tempore ullam praesentium nemo perferendis rem consectetur
+                            temporibus reprehenderit.</p>
+                        <div class="testimonio-info">
+                            <p class="cliente">Jorge</p>
+                            <p class="cargo">Estudiante de derecho</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+        <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        ¡Hablemos!
+                    </div>
+                    <div class="col-12 col-md-4 descripcion">
+                        Contáctame para ayudarte con tu pedido, tu visita es muy importante para nosotros
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:ejemplo@correo.com">
+                            <button type="button">
+                                Contacto
+                                <i class="bi bi-envelope"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pie de pagina -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img src="images/logo-Cesde-2023.webp" alt="Logo de portafolio" class="footer-logo" width="200">
+      
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://twiter.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="mailto:example@example.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope-check"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor">David Santiago Diaz Román y David Penagos Mejía (2025) &#169;</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
