@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -28,8 +28,7 @@
 </head>
 
 <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-md navbar-light">
+     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,39 +57,55 @@
             </div>
         </div>
     </nav>
-    <!-- Sección Hero -->
-    <main class="container my-5">
-    <h1 class="text-center mb-4">Modelo Entidad-Relación</h1>
-    <div class="text-center">
-      <img src="images/diagrama_biblioteca.png" alt="modelo biblioteca" class="img-fluid rounded border shadow" />
+   
+     <main class="container my-5">
+    <h1 class="mb-4">Lógica de Programación</h1>
+    <p>
+      A continuación, se presenta un ejercicio básico en <strong>Java</strong>, en el que el usuario debe crear una contraseña y vincularla a su documento de identidad (cédula). Luego se le solicitará que ingrese nuevamente la contraseña. Si los datos coinciden correctamente, se le permitirá acceder a un menú simulado. En caso contrario, se le negará el acceso.
+    </p>
+
+    <div class="bg-light p-3 border rounded mb-4">
+      <pre><code class="language-java">
+package com.mycompany.practica;
+
+import java.util.Scanner;
+
+/**
+ * @author Santiago Román
+ */
+public class Practica {
+
+    public static void main(String[] args) {
+
+        // Definición de variables
+        int cedula;
+        String password;
+        String passwordDig;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Cree una contraseña:");
+        password = sc.nextLine();
+
+        System.out.println("Ingrese la cédula:");
+        cedula = sc.nextInt();
+        sc.nextLine(); // Limpiar buffer
+
+        System.out.println("Ingrese la contraseña:");
+        passwordDig = sc.nextLine();
+
+        if (password.equals(passwordDig)) {
+            System.out.println("Tienes acceso al siguiente menú:");
+            System.out.println("- Actualizar datos");
+            System.out.println("- Ingresar datos");
+            System.out.println("- Solicitar cita");
+        } else {
+            System.out.println("Acceso denegado. Contraseña incorrecta.");
+        }
+    }
+}
+      </code></pre>
     </div>
-    <div class="alert alert-info text-center mt-4 fw-bold">
-      LOS LIBROS SON AMIGOS QUE NUNCA FALLAN
-    </div>
-  </main>
-    <!-- Contacto -->
-    <section id="contacto" class="contacto seccion-oscura">
-        <div class="container">
-            <div class="container text-center rectangulo d-flex justify-content-evenly">
-                <div class="row">
-                    <div class="col-12 col-md-4 seccion-titulo">
-                        ¡Hablemos!
-                    </div>
-                    <div class="col-12 col-md-4 descripcion">
-                        Contáctame para ayudarte con tu pedido, tu visita es muy importante para nosotros
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <a href="mailto:ejemplo@correo.com">
-                            <button type="button">
-                                Contacto
-                                <i class="bi bi-envelope"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Pie de pagina -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
         <img src="images/logo-Cesde-2023.webp" alt="Logo de portafolio" class="footer-logo" width="200">
